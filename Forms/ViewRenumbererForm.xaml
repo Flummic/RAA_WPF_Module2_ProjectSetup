@@ -1,0 +1,34 @@
+﻿<Window x:Class="RAA_WPF_Module2_ProjectSetup.ViewRenumbererForm"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:RAA_WPF_Module2_ProjectSetup"
+             mc:Ignorable="d" 
+             Title="Revit Add-in Academy"
+             d:DesignHeight="400" d:DesignWidth="500">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="75"/>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="5"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="100"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="View Renumberer" Grid.Row="0" Grid.Column="0" FontSize="45" FontWeight="SemiBold" VerticalAlignment="Bottom"/>
+        <Label Content="Click `Select` - Then pick Views to Renumber in Order:" Grid.Column="0" Grid.Row="1" VerticalAlignment="Bottom" FontWeight="Medium"/>
+        <ListBox x:Name="lbxSelectedViews" Grid.Row="2" Grid.Column="0" Margin="0,0,10,0"/>
+        <Button x:Name="btnViewSelect" Content="Select" Grid.Column="1" Grid.Row="2" Click="btnViewSelect_Click" Height="20" VerticalAlignment="Top"/>
+        <Label Content="Select Start-Number:" Grid.Column="0" Grid.Row="3" VerticalAlignment="Bottom" FontWeight="Medium"/>
+        <ComboBox x:Name="cbxStartNumber" Grid.Column="0" Grid.Row="4" Margin="0,0,10,0"/>
+        <Button x:Name="btnOk" Content="OK" Grid.Column="0" Grid.Row="6" Margin="0,10,10,10" Width="40" HorizontalAlignment="Right" Click="btnOk_Click"/>
+        <Button x:Name="btnCancel" Content="Cancel" Grid.Column="1" Grid.Row="6" Margin="0,10,0,10" Click="btnCancel_Click"/>
+    </Grid>
+</Window>

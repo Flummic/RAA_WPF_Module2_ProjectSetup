@@ -31,7 +31,7 @@ namespace RAA_WPF_Module2_ProjectSetup
             RibbonPanel panel = Utils.CreateRibbonPanel(app, "Revit Add-in Academy", "Revit Tools");
 
             // 3. Create button data instances
-            ButtonDataClass myButtonData = new ButtonDataClass("btnRAA_WPF_Module2_ProjectSetup", "My Button", Command.GetMethod(), Properties.Resources.Blue_32, Properties.Resources.Blue_16, "This is a tooltip");
+            ButtonDataClass myButtonData = new ButtonDataClass("btnRAA_WPF_Module2_ProjectSetup", "My Button", ProjectSetup.GetMethod(), Properties.Resources.Blue_32, Properties.Resources.Blue_16, "This is a tooltip");
 
             // 4. Create buttons
             PushButton myButton = panel.AddItem(myButtonData.Data) as PushButton;

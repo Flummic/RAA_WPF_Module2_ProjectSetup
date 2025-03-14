@@ -1,14 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <RevitAddIns>
   <AddIn Type="Command">
-    <Text>Command RAA_WPF_Module2_ProjectSetup</Text>
+    <Text>Command1 RAA_WPF_Module2_ProjectSetup</Text>
     <Description>Some description for RAA_WPF_Module2_ProjectSetup</Description>
     <Assembly>RAA_WPF_Module2_ProjectSetup.dll</Assembly>
-    <FullClassName>RAA_WPF_Module2_ProjectSetup.Command</FullClassName>
+    <FullClassName>RAA_WPF_Module2_ProjectSetup.ProjectSetup</FullClassName>
     <ClientId>f0737bf9-a816-4ec1-992f-0ef2f27d7647</ClientId>
     <VendorId>com.YOUR COMPANY NAME</VendorId>
     <VendorDescription>YOUR COMPANY NAME, YOUR COMPANY URL</VendorDescription>
   </AddIn>
+    <AddIn Type="Command">
+	    <Text>Command2 RAA_WPF_Module2_ProjectSetup</Text>
+	    <Description>Some description for RAA_WPF_Module2_ProjectSetup</Description>
+	    <Assembly>RAA_WPF_Module2_ProjectSetup.dll</Assembly>
+	    <FullClassName>RAA_WPF_Module2_ProjectSetup.ViewRenumberer</FullClassName>
+	    <ClientId>f0737bf9-a816-4ec1-992f-0ef2f27d7648</ClientId>
+	    <VendorId>com.YOUR COMPANY NAME</VendorId>
+	    <VendorDescription>YOUR COMPANY NAME, YOUR COMPANY URL</VendorDescription>
+    </AddIn>
   <AddIn Type="Application">
     <Name>Application RAA_WPF_Module2_ProjectSetup</Name>
     <Assembly>RAA_WPF_Module2_ProjectSetup.dll</Assembly>

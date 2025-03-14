@@ -15,7 +15,7 @@ using System.Reflection;
 namespace RAA_WPF_Module2_ProjectSetup
 {
     [Transaction(TransactionMode.Manual)]
-    public class Command : IExternalCommand
+    public class ProjectSetup : IExternalCommand
     {
         public Result Execute(
           ExternalCommandData commandData,
