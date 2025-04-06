@@ -27,6 +27,15 @@
 		<VendorId>com.YOUR COMPANY NAME</VendorId>
 		<VendorDescription>YOUR COMPANY NAME, YOUR COMPANY URL</VendorDescription>
 	</AddIn>
+	<AddIn Type="Command">
+		<Text>WPF: LevelChecker</Text>
+		<Description>Some description for RAA_WPF_Module2_ProjectSetup</Description>
+		<Assembly>RAA_WPF_Module2_ProjectSetup.dll</Assembly>
+		<FullClassName>RAA_WPF_Module2_ProjectSetup.LevelChecker</FullClassName>
+		<ClientId>f0737bf9-a816-4ec1-992f-0ef2f27d7651</ClientId>
+		<VendorId>com.YOUR COMPANY NAME</VendorId>
+		<VendorDescription>YOUR COMPANY NAME, YOUR COMPANY URL</VendorDescription>
+	</AddIn>
   <AddIn Type="Application">
     <Name>Application RAA_WPF_Module2_ProjectSetup</Name>
     <Assembly>RAA_WPF_Module2_ProjectSetup.dll</Assembly>

@@ -20,6 +20,23 @@ namespace RAA_WPF_Module2_ProjectSetup
             return currentPanel;
         }
 
+        internal static List<Level> GetAllLevels(Document doc)
+        {
+            FilteredElementCollector levelCollector = new FilteredElementCollector(doc);
+            levelCollector.OfClass(typeof(Level));
+            levelCollector.WhereElementIsNotElementType();
+
+            return levelCollector.Cast<Level>().ToList();
+        }
+
+        internal static FillPatternElement GetFillPatternByName(Document doc, string patternName)
+        {
+            FillPatternElement myFillPatternElement = null;
+
+            myFillPatternElement = FillPatternElement.GetFillPatternElementByName(doc, FillPatternTarget.Drafting, patternName);
+            return myFillPatternElement;
+        }
+
         internal static RibbonPanel GetRibbonPanelByName(UIControlledApplication app, string tabName, string panelName)
         {
             foreach (RibbonPanel tmpPanel in app.GetRibbonPanels(tabName))

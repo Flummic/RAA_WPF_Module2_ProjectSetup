@@ -1,0 +1,18 @@
+﻿<Window x:Class="RAA_WPF_Module2_ProjectSetup.Modul04Form"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:RAA_WPF_Module2_ProjectSetup"
+             mc:Ignorable="d" 
+             Title="Revit Add-in Academy"
+             d:DesignHeight="400" d:DesignWidth="500">
+    <Grid Margin="10">
+        <StackPanel Orientation="Vertical" VerticalAlignment="Center">
+            <CheckBox x:Name="cbXBoolean" Content="Is Placeholder?" HorizontalAlignment="Center"/>
+            <TextBox x:Name="tbxSheetNumber" Width="200" Height="30" Margin="5"/>
+            <TextBox x:Name="tbxSheetName" Width="200" Height="30" Margin="5"/>
+            <Button x:Name="btnButton" Content="Create sheet" Width="100" Height="30" Click="btnButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
